@@ -1,0 +1,48 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e5e7eb;
+  --color-border-subtle: #e5e7eb;
+  --color-border-accent: #d6c5bf;
+  --color-brand: #b48f8f;
+  --color-brand-hover: #a07272;
+  --color-brand-active: #8c5f5f;
+  --color-brand-subtle: #c3a5a5;
+  --color-accent-cool: #adb2c6;
+  --color-text-primary: #2f2f2f;
+  --color-text-secondary: #737373;
+  --color-text-inverse: #ffffff;
+  --color-status-error: #c25757;
+  --color-status-success: #5d865d;
+  --color-status-warning: #d6c5bf;
+  --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #adb2c6;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1f1f22;
+  --color-bg-subtle: #27272b;
+  --color-surface: #2d2d31;
+  --color-surface-alt: #3a3a40;
+  --color-border-subtle: #45454c;
+  --color-border-accent: #6b5652; /* darkened warm accent */
+  --color-brand: #b48f8f; /* keep brand hue for recognition */
+  --color-brand-hover: #a07272;
+  --color-brand-active: #8c5f5f;
+  --color-brand-subtle: #5a4242; /* tinted darker */
+  --color-accent-cool: #8f95aa;
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #c0c0c5;
+  --color-text-inverse: #1f1f22;
+  --color-status-error: #d86a6a;
+  --color-status-success: #6aa56a;
+  --color-status-warning: #b8948d;
+  --focus-ring: 0 0 0 2px #2d2d31, 0 0 0 4px #adb2c6;
+}
+
+/* Utility examples */
+.btn-primary { background: var(--color-brand); color: var(--color-text-inverse); }
+.btn-primary:hover { background: var(--color-brand-hover); }
+.btn-primary:active { background: var(--color-brand-active); }
+
+.focus-outline:focus { outline: var(--focus-ring); }
